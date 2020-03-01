@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box;
+    overflow: auto;
+    background-color: rgb(21, 21, 24);
+    font-family: Helvetica, sans-serif;
+}
+
+h1{
+    text-align: center;
+    color: rgb(192, 190, 189);
+}
+
+.text{
+    font-family: 'Dancing Script', cursive;
+    text-align: justify;
+    padding: 8px;
+}
+
+div{
+    width: 90%;
+
+    background-color: rgb(75, 25, 25);
+    color: rgb(192, 190, 189);
+    margin-right: auto; margin-left: auto;
+}
+
+.boxA{
+    
+    border: 1px rgb(192, 190, 189) solid;
+    height: 200px;
+}
+
+.boxB{
+    
+    border: 1px rgb(192, 190, 189) solid;
+    height: 200px;    
+}
+
+.title{
+    margin: 4px;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    padding: 2px;
+    border: 1px solid rgb(192, 190, 189);
+    width: 90px;
+    height: max-content;
+    /* position: static; */
+    float: right;   
+}.boxA, .boxB{ float: left;    margin-right: 3px; 
+    margin-left: 3px;}
+@media(min-width: 992px){
+    .boxA, .boxB{  width: 32%;    }
+
+}
+@media(min-width:768px)and (max-width: 991px){
+    .boxA{ 
+        width: 48%;
+    }
+    .boxB{
+        margin-top: 6px;
+        width: 97%;
+    }
+}
+@media(max-width: 767px){
+    .boxA{ width: 99%; margin-top: 4px;}
+    .boxB{ width: 99%; margin-top: 5px;}
+}
+#x{background-color: rgb(124, 74, 7);}
+#y{background-color: rgb(8, 112, 78);}
+#z{background-color: darkslategray;}
